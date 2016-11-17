@@ -1,0 +1,257 @@
+/* ----------------------------------------------------------
+ *
+ *		Grey	: #767377
+ *		Black	: #474548
+ *
+ * ------------------------------------------------------- */
+
+
+
+body {
+    font-family: "Merriweather Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.6;
+    color: #767377;
+	-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+	-o-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale; }
+
+::selection { background-color: #000; color: #fff; text-shadow: none; }
+
+@media (min-width: 768px){
+	body {
+    font-size: 14px;
+    line-height: 1.8;
+  }
+}
+@media (min-width: 992px){}
+@media (min-width: 1200px){}
+
+
+/* ==============================================================
+ *		Font Styles
+ ================================================================ */
+
+
+
+h1,.h1, h2,.h2, h3,.h3, h4,.h4, h5,.h5 { font-family: "Merriweather", Georgia,Times,"Times New Roman",serif; }
+h6,.h6 { font-family: "Merriweather Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+h1,.h1 { font-size: 4.4em; margin: 10px 0; }
+h2,.h2 { font-size: 2.8em; margin: 10px 0; }
+h3,.h3 { font-size: 2.2em; margin: 10px 0; line-height: 1; }
+h4,.h4 { font-size: 1.4em; margin: 10px 0; }
+h5,.h5 { font-size: 1.1em; margin: 10px 0; line-height: 1.3; }
+h6,.h6 { line-height: 1.6; }
+
+h4.underline,
+.h4.underline { padding-bottom: 10px; border-bottom: 1px solid rgba(0,0,0,0.1); }
+
+p, .p { max-width: 720px; }
+.center p { margin-left: auto; margin-right: auto; }
+.lead {
+	font-family: "Merriweather", Georgia,Times,"Times New Roman",serif; font-weight: normal;
+	font-size: 1.6em; line-height: 1.4; }
+
+
+small, .small { font-size: 12px; }
+em { font-style: italic; }
+strong { font-family: "Merriweather Sans"; font-weight: 800; }
+.mono { font-family: "Merriweather"; }
+.book { font-family: "Merriweather Sans"; }
+
+a { text-decoration: none; color: #717171; }
+a:hover,a:focus { text-decoration: none; color: #363A35; }
+
+
+
+
+/* ==============================================================
+ *		WYSIWYG
+ ================================================================ */
+
+
+.left {
+    text-align: left
+}
+.center {
+    text-align: center
+}
+.right {
+    text-align: right
+}
+
+
+/* ==============================================================
+ *		Images
+ ================================================================ */
+
+
+img {
+    height: auto;
+}
+img.inline { margin-right: 10px; margin-left: 10px; margin-top: -2px; }
+img.left {
+    float: left;
+    max-width: 50%;
+    margin: 5px 20px 10px 0;
+}
+img.right {
+    float: right;
+    max-width: 50%;
+    margin: 5px 0 10px 20px;
+}
+img.leftAlone {
+    float: left;
+    margin-right: 100%;
+    margin-bottom: 10px;
+    clear: both;
+}
+img.center {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 10px;
+    clear: both;
+}
+.captionImage { width: 100%; margin-top: 5px; }
+.captionImage img { margin: 0; }
+  .captionImage.left {
+    float: left;
+    margin: 5px 30px 20px 0px;
+  }
+  .captionImage.right{
+    float: right;
+    margin: 5px 0 20px 30px;
+  }
+  .captionImage.left[style],
+  .captionImage.right[style] {
+    max-width: 50%;
+  }
+  .captionImage.left img,
+  .captionImage.right img {
+    float: none;
+    max-width: none;
+    width: 100%;
+  }
+  .captionImage.left img {
+    margin-right: -10px;
+  }
+  .captionImage.right img {
+    margin-left: -10px;
+  }
+  .captionImage.right p {
+    margin-left: -10px;
+    text-align: left;
+    margin-left: -10px;
+  }
+.captionImage.leftAlone{
+  float:none;
+  margin: 0 20px 20px 0px;
+}
+.captionImage.center{
+  margin: 0 auto 20px;
+}
+.captionImage p {
+  clear: both;
+  margin: 5px 0;
+  font-style: italic;
+  color: #888;
+}
+
+/* ==============================================================
+ *		Lists
+ ================================================================ */
+
+
+ul { padding: 0 1em; }
+ul li { margin-bottom: 5px; }
+
+
+ul.lined { list-style: none; margin: 15px 0; padding: 0; }
+
+	ul.lined li { padding: 4px 0; margin: 0; border-bottom: 1px solid rgba(0,0,0,0.1); }
+
+	.dark ul.lined li { border-color: rgba(255,255,255,0.2); }
+
+
+ul.filters {text-align: center; list-style: none; padding: 0; margin-bottom: 15px; overflow: hidden; }
+
+	ul.filters li {
+		text-align: center; float: left; padding: 0; margin: 0;
+		border-left: 1px solid #EEE; border-bottom: 1px solid #EEE; border-top: 1px solid #EEE; }
+	ul.filters li:last-child { border-right: 1px solid #EEE; }
+	ul.filters li a {
+		font-family: "Merriweather"; padding: 10px 15px; display: block; border-bottom: 0px solid #EEE; }
+	ul.filters li a:hover { background-color: transparent; border-bottom: 2px solid #EEE; padding-bottom: 8px; }
+
+
+/* ==============================================================
+ *		Tables
+ ================================================================ */
+
+
+
+/* ==============================================================
+ *		Blockquotes
+ ================================================================ */
+
+
+
+/* ==============================================================
+ *		Buttons
+ ================================================================ */
+
+
+/*-------- .button --------*/
+
+button, input[type=button], input[type=submit], .button {
+	padding: 10px 20px 8px; margin: 10px 10px 10px 0; float: left; position: relative; line-height: 1; text-decoration: none;
+	background-color: transparent; border: 2px solid #474548; font-size: 0.9em; font-weight: 600; color: #474548; border-radius: 50px;
+	font-family: "Merriweather", "Helvetica Neue", Helvetica, Arial, sans-serif; text-transform: uppercase;
+	 -webkit-transition: all 180ms; -moz-transition: all 180ms; -o-transition: all 180ms; transition: all 180ms; }
+	button:hover, input[type=button]:hover, input[type=submit]:hover, .button:hover { background-color: #474548; color: #fff; }
+
+
+.dark button, .dark input[type=button], .dark input[type=submit], .dark .button {
+	color: #fff; border-color: rgba(255,255,255,0.2); }
+	.dark button:hover, .dark input[type=button]:hover, .dark input[type=submit]:hover, .dark .button:hover { border-color: #fff; }
+
+
+.center .button { display: inline-block; float: none; }
+
+
+.button.sm { font-size: 0.9em; text-transform: none; margin: 4px 6px 4px 0; }
+
+
+.button.em { background-color: #474548; color: #fff; }
+
+
+.button.subtle { border: 2px solid #b4b1b5; }
+
+
+@media (min-width: 768px){}
+@media (min-width: 992px){
+	button, input[type=button], input[type=submit], .button, .button { font-size: 1em; }
+}
+@media (min-width: 1200px){}
+
+
+
+/* ==============================================================
+ *		Quick Styles
+ ================================================================ */
+
+
+.textbar { opacity: 0.2; filter: alpha(opacity="20"); margin: auto 10px; font-family: "Merriweather Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;  }
+
+
+.dark { color: #fff; }
+.dark p,.dark .p { color: #fff; }
+.dark h1,.dark h2,.dark h3,.dark h4,.dark h5,.dark h6 { color: #fff; }
+.dark a { color: #e2e7e3; }
+.dark a:hover { color: #fff; }
+
+
